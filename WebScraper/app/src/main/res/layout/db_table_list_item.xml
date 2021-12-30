@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linLayout"
+            android:layout_weight="80">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clan Name"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:id="@+id/clcrName"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clan"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:id="@+id/clcr"
+            android:layout_below="@+id/clcrName"
+            android:textColor="@color/white"
+            android:background="@drawable/clcr_bg"
+            android:padding="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date created: 19/78/18 15:30:20"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:id="@+id/dateCreated"
+            android:layout_below="@+id/clcr"
+            android:textColor="@color/grey"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:id="@+id/delBtnRelLayout">
+
+        <ImageView
+            android:id="@+id/deleteTableBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_delete"
+            android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
